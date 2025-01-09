@@ -10,4 +10,7 @@ find_package(FFMPEG REQUIRED)
 find_package(SDL2 CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 
-add_subdirectory(src)
+set(TARGET_CORE "ffmpegpp-core")
+add_subdirectory(FFmpegpp)
+set(TARGET_TESTS "ffmpegpp-tests")
+add_subdirectory(tests)
